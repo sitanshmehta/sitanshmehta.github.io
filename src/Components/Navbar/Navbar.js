@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'
 
 class Navbar extends Component{
@@ -21,9 +21,9 @@ class Navbar extends Component{
                         {
                         return(
                             <li key={index} className={item.cName}>
-                                <Link to={item.url} className={item.cName}>
+                                <NavLink to={item.url} className={item.cName}>
                                     {item.title}
-                                </Link>
+                                </NavLink>
                             </li>
                         );
                         }

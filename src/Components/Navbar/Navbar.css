@@ -23,6 +23,10 @@
     padding: 0.5rem 1rem;
 }
 
+.nav-links a.active {
+    text-decoration:underline;
+    font-weight: bold;
+}
 
 .nav-links:hover{
     border-radius: 4px;
@@ -76,11 +80,6 @@
         text-align:center;
         display: table;
         width: 50%;
-    }
-
-    .nav-links:hover{
-        background-color: #6d76f7;
-        border-radius: 3px;
     }
 
     .menu-icon{
