@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    background-color: rgb(171, 203, 242);
+
 }
 
 .nav-menu{
@@ -26,6 +28,7 @@
 .nav-links a.active {
     text-decoration:underline;
     font-weight: bold;
+    color: #3498db;
 }
 
 .nav-links:hover{
@@ -56,8 +59,8 @@
     .nav-menu{
         display: flex;
         flex-direction: column;
-        width: 25%; 
-        height: 250px; 
+        width: 50%; 
+        height: 90vh; 
         position: relative;
         top: 250px;
         left: -100%;
@@ -65,10 +68,11 @@
         transition: all 0.1s ease;
         border-bottom-style:solid;
         border-top-style: solid;
+        background-color: antiquewhite;
+
     }
 
     .nav-menu.active {
-        /* background: #fcbcbc; */
         left: 0;
         opacity: 1;
         transition: all 0.1s ease;
