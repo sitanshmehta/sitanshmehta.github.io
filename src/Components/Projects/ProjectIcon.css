@@ -1,0 +1,47 @@
+.project-icon {
+    display: block;
+    max-width: 400px;
+    width: 60w;
+    padding: 40px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    align-items: center;
+}
+
+.project-title {
+    display: block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 23px;
+    color: white;
+}
+
+.project-image {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+    border-color: black;
+    border-top-width: 0;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+}
+
+.project-date {
+    font-size: 18px;
+}
+
+.text-overlay {
+    padding-bottom: 20px;
+    background-color: #9d63be;
+    height: 100px;
+    width: 300px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-color: black;
+    border-width: 3px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}

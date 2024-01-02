@@ -1,76 +1,79 @@
-
-.home-page{
+.home-page {
     text-align: left;
     padding-left: 220px;
-    padding-top: 50px; 
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 92vh;
+    background: linear-gradient(#25227f, #7f85c4);
 }
 
-.intro{
+.intro {
     font-size: 2.5rem;
-    display:block;
+    display: block;
     width: 50%;
 }
 
-.intro-name{
+.intro-name {
     font-weight: bold;
 }
-.name{
+
+.name {
     font-size: 3.8rem;
-    color: #3498db;
+    /* color: #3498db; */
+    color: white;
     font-weight: bold;
 }
 
-.intro-content-para{
+.intro-content-para {
     font-size: 1.6rem;
+    font-weight: bold;
 }
 
-.intro-note{
+.intro-note {
     padding-top: 30px;
     font-size: 1.6rem;
+    font-weight: bold;
 }
 
-.profile-image-container{
+.profile-image-container {
     width: 50%;
     height: 600px;
     justify-content: center;
     padding-top: 20px;
 }
 
-.profile-image{
-    border-radius:50%; /* Apply a circular border to the profile image */
-    width: 550px; /* Adjust the width of the profile image */
-    height: 550px; /* Adjust the height of the profile image */
+.profile-image {
+    border-radius: 50%;
+    width: 550px;
+    height: 550px;
     object-fit: cover;
     padding: 2px;
-    border-color: #3498db;
+    /* border-color: #3498db; */
+    border-color: white;
     border-width: 13px;
 }
 
-@media screen and (max-width: 800px){
-    .home-page{
+@media screen and (max-width: 800px) {
+    .home-page {
         display: flex;
-        flex-direction: column; /* Stack elements vertically on small screens */
+        flex-direction: column;
         align-items: center;
         text-align: center;
         width: 105%;
         height: 120vh;
-        padding: 0px; /* Add padding for better spacing on small screens */
+        padding: 0px;
     }
 
-    .intro-name{
+    .intro-name {
         display: block;
         padding: 4px;
     }
 
-    .intro{
+    .intro {}
 
-    }
-
-    .profile-image-container{
+    .profile-image-container {
         display: none;
     }
 }

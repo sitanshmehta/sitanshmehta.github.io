@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css'
-import profile from './profile.png';
-
 
 const Home = () => {
     return (
@@ -21,7 +19,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='profile-image-container'>
-                <img src={profile} alt='Whoops!' className='profile-image' />
+                <img src="/images/profile.png" alt='Whoops!' className='profile-image' />
             </div>
         </div>
     )
