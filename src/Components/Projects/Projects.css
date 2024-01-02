@@ -1,0 +1,10 @@
+.projects-page {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    background: linear-gradient(#25227f, #7f85c4);
+}

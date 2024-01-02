@@ -4,11 +4,14 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    background-color: rgb(171, 203, 242);
-
+    /* background-color: #96b9f7; */
+    background-color: #0a4267;
+    /* background-color: #c5d8f9; */
+    border-bottom-width: 1px;
+    border-color: black;
 }
 
-.nav-menu{
+.nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: 20px;
@@ -16,57 +19,57 @@
     text-align: center;
     width: 70w;
     justify-content: end;
-    /* margin-right: 8rem; */
 }
 
-.nav-links{
-    color: black;
-    text-decoration:none;
+.nav-links {
+    /* color: black; */
+    color: white;
+    text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 .nav-links a.active {
-    text-decoration:underline;
+    text-decoration: underline;
     font-weight: bold;
     color: #3498db;
 }
 
-.nav-links:hover{
+.nav-links:hover {
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
 
-.nav-links-mobile{
+.nav-links-mobile {
     display: none;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
 }
 
-.cD{
+.cD {
     position: relative;
 }
 
 /* PHONE */
-@media screen and (max-width: 800px){
-    .NavbarItem{
-        position:relative;
-        align-items:center;
+@media screen and (max-width: 800px) {
+    .NavbarItem {
+        position: relative;
+        align-items: center;
         /* background-color: #6d76f5; */
     }
 
-    .nav-menu{
+    .nav-menu {
         display: flex;
         flex-direction: column;
-        width: 50%; 
-        height: 90vh; 
+        width: 50%;
+        height: 90vh;
         position: relative;
         top: 250px;
         left: -100%;
         opacity: 1;
         transition: all 0.1s ease;
-        border-bottom-style:solid;
+        border-bottom-style: solid;
         border-top-style: solid;
         background-color: antiquewhite;
 
@@ -77,16 +80,16 @@
         opacity: 1;
         transition: all 0.1s ease;
         z-index: 1;
-        padding:5rem;
+        padding: 5rem;
     }
 
-    .nav-links{
-        text-align:center;
+    .nav-links {
+        text-align: center;
         display: table;
         width: 50%;
     }
 
-    .menu-icon{
+    .menu-icon {
         display: block;
         position: absolute;
         top: 0;

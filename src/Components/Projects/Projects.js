@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
 import './Projects.css'
+import ProjectIcon from './ProjectIcon.js';
+import ProjectList from './ProjectList.js';
 
 const Projects = () => {
-    return(
+    return (
         <div className="projects-page">
-            <header>
-                <h1>Projects Page</h1>
-            </header>
+            {
+                ProjectList.map((project) => (
+                    <ProjectIcon
+                        id={project.id}
+                        title={project.title}
+                        date={project.date}
+                        display_date={project.display_date}
+                        url={project.url}
+                        image={project.image}
+                        skills={project.skills}
+                        type={project.type}
+                    />
+                ))
+            }
         </div>
     )
 }
