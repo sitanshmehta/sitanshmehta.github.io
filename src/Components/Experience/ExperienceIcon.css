@@ -1,0 +1,166 @@
+.experience-icon {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 100%;
+    max-width: 900px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-icon:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.experience-image {
+    height: 100%;
+    max-height: 100%;
+    width: 150px;
+    object-fit: contain;
+    border-right: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+}
+
+.experience-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 20px;
+}
+
+.experience-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.experience-organisation {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.experience-date {
+    font-size: 18px;
+    color: #888;
+}
+
+.experience-description {
+    font-size: 18px;
+    color: #555;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.experience-skills-text {
+    margin-bottom: 12px;
+
+}
+
+/* ExperienceIcon.css */
+
+/* ExperienceIcon.css */
+
+/* General styling for mobile screens */
+@media screen and (max-width: 800px) {
+    .experience-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f4f4f4;
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+        width: 90%;
+        /* Reduced width to ensure padding on both sides */
+        max-width: 100%;
+        /* Ensures it doesn't exceed the screen width */
+        text-align: center;
+    }
+
+    .experience-icon:hover {
+        transform: scale(1.02);
+        /* Slightly enlarge the icon on hover */
+    }
+
+    .experience-image {
+        width: 60px;
+        /* Slightly smaller for better spacing */
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        object-fit: cover;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .experience-text {
+        width: 100%;
+        text-align: left;
+        /* Align text to the left for better readability */
+    }
+
+    .experience-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .experience-position {
+        font-size: 1.2rem;
+        /* Adjusted font size for mobile */
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+        text-align: left;
+        /* Ensure text aligns to the left */
+    }
+
+    .experience-organisation {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        color: #666;
+        text-align: left;
+        /* Ensure text aligns to the left */
+    }
+
+    .experience-date {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 10px;
+        text-align: left;
+        /* Ensure text aligns to the left */
+    }
+
+    .experience-description {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        /* Slightly smaller font size for descriptions */
+        color: #555;
+        text-align: left;
+        /* Ensure text aligns to the left */
+    }
+
+    .experience-skills-text {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #007bff;
+        /* Highlight skills */
+        margin-bottom: 5px;
+        text-align: left;
+        /* Ensure text aligns to the left */
+    }
+}

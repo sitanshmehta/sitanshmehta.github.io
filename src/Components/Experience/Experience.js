@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
 import './Experience.css'
+import ExperienceIcon from './ExperienceIcon';
+import ExperienceList from './ExperienceList';
 
 const Experience = () => {
-    return(
+    return (
         <div className="exp-page">
-            <header>
-                <h1>Experience Page</h1>
-            </header>
+            {
+                ExperienceList.map((experience) => (
+                    <ExperienceIcon
+                        id={experience.id}
+                        organisation={experience.organisation}
+                        logo={experience.logo}
+                        skills={experience.skills}
+                        description={experience.description}
+                        start_date={experience.start_date}
+                        end_date={experience.end_date}
+                        position={experience.position}
+                        path={experience.url}
+                    />
+                ))
+            }
         </div>
     )
 }

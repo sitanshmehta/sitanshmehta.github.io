@@ -1,79 +1,90 @@
 .home-page {
-    text-align: left;
-    padding-left: 220px;
-    padding-top: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
     height: 92vh;
-    background: linear-gradient(#25227f, #7f85c4);
+    background-color: #f4f4f9;
+    text-align: left;
 }
 
 .intro {
-    font-size: 2.5rem;
-    display: block;
-    width: 50%;
+    max-width: 600px;
+    margin-right: 50px;
 }
 
-.intro-name {
+.intro-greeting {
+    font-size: 2.5rem;
+    color: #333;
     font-weight: bold;
 }
 
 .name {
-    font-size: 3.8rem;
-    /* color: #3498db; */
-    color: white;
-    font-weight: bold;
+    color: #160c80;
 }
 
-.intro-content-para {
-    font-size: 1.6rem;
-    font-weight: bold;
+.intro-content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #555;
+}
+
+.interest-list {
+    list-style-type: circle;
+    padding-left: 20px;
+    color: #333;
+}
+
+.interest-list li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
 }
 
 .intro-note {
-    padding-top: 30px;
-    font-size: 1.6rem;
-    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+    display: flex;
+}
+
+.intro-item {
+    padding: 10px;
+    color: blue;
+    text-decoration: underline;
 }
 
 .profile-image-container {
-    width: 50%;
-    height: 600px;
-    justify-content: center;
-    padding-top: 20px;
+    flex-shrink: 0;
 }
 
 .profile-image {
-    border-radius: 50%;
-    width: 550px;
-    height: 550px;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
-    padding: 2px;
-    /* border-color: #3498db; */
-    border-color: white;
-    border-width: 13px;
+    border: 3px solid #4e0c0c;
 }
 
 @media screen and (max-width: 800px) {
     .home-page {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 105%;
-        height: 120vh;
-        padding: 0px;
+        text-align: left;
+        height: 110vh;
     }
 
-    .intro-name {
-        display: block;
-        padding: 4px;
+    .intro {
+        margin-right: 0;
+        margin-bottom: 30px;
     }
-
-    .intro {}
 
     .profile-image-container {
+        display: none;
+    }
+
+    .profile-image {
         display: none;
     }
 }
