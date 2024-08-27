@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import './Skygauge.css';
 import ExperienceDetail from './ExperienceDetails';
 import CollapsibleSection from '../Helpers/Collaplsable';
@@ -7,6 +7,11 @@ import SkygaugeIndex from '../Helpers/SkygaugeIndex';
 
 
 const Skygauge = () => {
+    useEffect(() => {
+        document.title = "Skygauge - Sitansh Mehta";
+    }, []);
+
+
     const scrollTo = (id) => {
         const glossarySection = document.getElementById(id);
         if (glossarySection) {

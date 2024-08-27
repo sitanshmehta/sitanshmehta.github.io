@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './Home.css'
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Home - Sitansh Mehta";
+    }, []);
     return (
         <div className='home-page'>
             <div className='intro'>

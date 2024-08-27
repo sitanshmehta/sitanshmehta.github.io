@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import './Experience.css'
 import ExperienceIcon from './ExperienceIcon';
 import ExperienceList from './ExperienceList';
 
 const Experience = () => {
+    useEffect(() => {
+        document.title = "Experience - Sitansh Mehta";
+    }, []);
     return (
         <div className="exp-page">
             {
