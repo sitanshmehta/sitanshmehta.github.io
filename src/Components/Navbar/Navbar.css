@@ -1,12 +1,9 @@
 .NavbarItem {
     height: 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    /* background-color: #96b9f7; */
-    background-color: #0a4267;
-    /* background-color: #c5d8f9; */
+    align-items: end;
+    font-size: 1.0rem;
+    background-color: #000000;
     border-bottom-width: 1px;
     border-color: black;
 }
@@ -14,7 +11,7 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 20px;
+    grid-gap: 8px;
     list-style: none;
     text-align: center;
     width: 70w;
@@ -54,48 +51,81 @@
 /* PHONE */
 @media screen and (max-width: 800px) {
     .NavbarItem {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
         align-items: center;
-        /* background-color: #6d76f5; */
+        justify-content: space-between;
+        padding: 0 20px;
+        /* Dark background for better visibility */
+        color: white;
+        z-index: 1000;
+        /* Ensure the navbar stays on top */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* Add a slight shadow for depth */
     }
 
     .nav-menu {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        height: 90vh;
-        position: relative;
-        top: 250px;
+        width: 100%;
+        position: fixed;
+        top: 60px;
+        /* Positioned right below the navbar */
         left: -100%;
-        opacity: 1;
-        transition: all 0.1s ease;
-        border-bottom-style: solid;
-        border-top-style: solid;
-        background-color: antiquewhite;
-
+        background-color: #000000;
+        /* Dark background for the menu */
+        transition: all 0.3s ease;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 999;
     }
 
     .nav-menu.active {
         left: 0;
         opacity: 1;
-        transition: all 0.1s ease;
-        z-index: 1;
-        padding: 5rem;
+        transition: all 0.3s ease;
     }
 
     .nav-links {
         text-align: center;
-        display: table;
-        width: 50%;
+        padding: 15px 20px;
+        display: block;
+        width: 100%;
+        /* Full width for easy tapping */
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-links:hover {
+        background-color: #555;
+        /* Highlight on hover */
     }
 
     .menu-icon {
         display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        color: white;
+    }
+
+    .menu-icon i {
+        transition: transform 0.3s ease;
+        /* Smooth icon transition */
+    }
+
+    .menu-icon i.fas.fa-times {
+        transform: rotate(90deg);
+        /* Rotate the close icon */
+    }
+
+    .nav-menu .nav-links.active {
+        background-color: #555;
+        /* Keep the background highlighted for the active link */
     }
 }

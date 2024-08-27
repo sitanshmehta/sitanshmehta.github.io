@@ -1,0 +1,58 @@
+.sky-index {
+    margin-top: 80px;
+    width: 290px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 80px);
+}
+
+.sky-index ul {
+    padding-left: 0;
+    overflow-y: auto;
+}
+
+.index-link {
+    padding: 0px 10px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.index-link ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.index-link ul li:hover {
+    background-color: #d9d9d9;
+    color: #007bff;
+}
+
+.index-link.active,
+.index-link ul li.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.sky-index::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sky-index::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.sky-index::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.sky-index::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

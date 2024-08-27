@@ -1,0 +1,87 @@
+.exp-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.experience-icon {
+    width: 80%;
+    max-width: 900px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.experience-icon:hover {
+    transform: scale(1.02);
+}
+
+.experience-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.experience-text {
+    width: 100%;
+    text-align: left;
+}
+
+.experience-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-position {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experience-organisation {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.experience-date {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.experience-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.experience-skills-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .exp-page {
+        height: 150vh;
+    }
+
+}

@@ -1,0 +1,267 @@
+ .main-content {
+     display: flex;
+     text-align: left;
+     height: 90vh;
+ }
+
+ .index {
+     width: 250px;
+     padding-left: 10px;
+     overflow-y: visible;
+     height: auto;
+ }
+
+ .experience-detail {
+     flex-grow: 1;
+     padding: 10px;
+     background-color: #ffffff;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     margin: 20px auto;
+     max-width: 1000px;
+     line-height: 1.8;
+     text-align: left;
+     overflow-y: auto;
+ }
+
+ .experience-detail section {
+     margin-bottom: 40px;
+ }
+
+ .experience-detail h1 {
+     font-size: 30px;
+     font-weight: bold;
+     margin-bottom: 7px;
+     color: #222;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     border-bottom: 4px solid #9d63be;
+     padding-bottom: 1px;
+ }
+
+ .experience-detail h2 {
+     font-size: 26px;
+     font-weight: bold;
+     margin-bottom: 15px;
+     color: #222;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     border-bottom: 2.5px solid #9d63be;
+     padding-bottom: 5px;
+ }
+
+ .experience-detail h3 {
+     font-size: 21px;
+     font-weight: bold;
+     padding-bottom: 5px;
+ }
+
+ .experience-detail h4 {
+     font-size: 18px;
+     font-weight: bold;
+     padding-bottom: 5px;
+ }
+
+ .experience-detail p,
+ li {
+     font-size: 18px;
+     line-height: 1.8;
+     color: #444;
+     margin-left: 0px;
+     margin-bottom: 6px;
+ }
+
+ .experience-diagrams {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 25px;
+     margin-left: 0px;
+ }
+
+ .diagram {
+     flex: 1 1 calc(33.333% - 25px);
+     box-sizing: border-box;
+ }
+
+ .diagram img {
+     max-width: 100%;
+     border-radius: 10px;
+     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .diagram p {
+     margin-top: 12px;
+     font-size: 16px;
+     color: #555;
+     font-style: italic;
+     text-align: center;
+ }
+
+ .experience-summary {
+     line-height: 1.8;
+ }
+
+ .experience-summary strong {
+     font-weight: bold;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ .glossary-section {
+     padding: 30px;
+     background-color: #ffffff;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     margin: 20px auto;
+     max-width: 1000px;
+     line-height: 1.6;
+ }
+
+ .glossary-section h2 {
+     font-size: 26px;
+     font-weight: bold;
+     margin-bottom: 15px;
+     color: #222;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     border-bottom: 2px solid #9d63be;
+     padding-bottom: 5px;
+ }
+
+ .glossary-section dl {
+     margin-top: 20px;
+ }
+
+ .glossary-section dt {
+     font-size: 20px;
+     font-weight: bold;
+     margin-top: 20px;
+     color: #333;
+ }
+
+ .glossary-section dd {
+     font-size: 18px;
+     line-height: 1.8;
+     color: #555;
+     margin-left: 20px;
+     margin-bottom: 10px;
+ }
+
+ .experience-summary-list {
+     list-style-type: disc;
+     padding-left: 20px;
+     margin-bottom: 15px;
+     margin-left: 15px;
+ }
+
+ .bom-images {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+     margin-top: 20px;
+ }
+
+ .bom-images img {
+     max-width: 50%;
+     height: auto;
+     border: 2px solid #ccc;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s ease-in-out;
+ }
+
+ .bom-images img:hover {
+     transform: scale(1.05);
+ }
+
+ .bom-images-caption {
+     text-align: center;
+     font-size: 16px;
+     color: #555;
+     margin-top: -10px;
+     margin-bottom: 20px;
+     font-style: italic;
+ }
+
+ /* Ensure the layout container fills the viewport height */
+ .layout-container {
+     display: flex;
+     height: 100vh;
+     /* Full height of the viewport */
+ }
+
+ /* Sidebar (Skygauge Index) styles */
+ .sky-index {
+     width: 250px;
+     /* Set the desired width for the sidebar */
+     overflow-y: auto;
+     /* Enable vertical scrolling */
+     height: 100%;
+     /* Full height of the container */
+     background-color: #f4f4f4;
+     /* Background color for the sidebar */
+     padding: 20px;
+     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+     /* Optional: add some shadow */
+ }
+
+ /* Main content styles */
+ .content-container {
+     flex-grow: 1;
+     /* Take up the remaining width */
+     overflow-y: auto;
+     /* Enable vertical scrolling */
+     padding: 20px;
+     height: 100%;
+     /* Full height of the container */
+ }
+
+ /* Additional styling for your layout (optional) */
+ ul {
+     list-style-type: none;
+     padding-left: 0;
+ }
+
+ .index-link {
+     cursor: pointer;
+     padding: 10px 15px;
+     margin-bottom: 5px;
+     color: #333;
+     font-size: 14px;
+     transition: background-color 0.3s, color 0.3s;
+ }
+
+ .index-link:hover {
+     background-color: #e0e0e0;
+     color: #007bff;
+ }
+
+ .index-link ul {
+     padding-left: 20px;
+ }
+
+ .index-link ul li {
+     padding: 5px 10px;
+     color: #555;
+     font-size: 13px;
+ }
+
+ .index-link ul li:hover {
+     background-color: #d9d9d9;
+     color: #007bff;
+ }
+
+ @media screen and (max-width: 800px) {
+     .index {
+         display: none;
+     }
+
+     .main-content {
+         height: 100vh;
+         padding: 10px;
+         padding-top: 50px;
+     }
+ }

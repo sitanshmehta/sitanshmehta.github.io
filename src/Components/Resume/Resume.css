@@ -1,0 +1,36 @@
+.resume-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9d0;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resume-viewer {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.resume-page-title {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.resume-download {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.resume-download a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resume-download a:hover {
+    text-decoration: underline;
+}

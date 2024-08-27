@@ -1,0 +1,29 @@
+.collapsible {
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.collapsible-header {
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsible-arrow {
+    font-size: 20px;
+    color: black;
+}
+
+.collapsible-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-top: none;
+}
