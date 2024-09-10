@@ -21,6 +21,7 @@ const Experience = () => {
                         end_date={experience.end_date}
                         position={experience.position}
                         path={experience.url}
+                        highlight={experience.highlight}
                     />
                 ))
             }

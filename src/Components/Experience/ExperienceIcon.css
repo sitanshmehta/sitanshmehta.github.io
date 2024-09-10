@@ -38,38 +38,39 @@
 }
 
 .experience-title {
-    font-size: 28px;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
 
 .experience-organisation {
-    font-size: 22px;
-    color: #666;
-    margin-bottom: 15px;
+    font-size: 23px;
+    color: #373030;
+    margin-bottom: 10px;
 }
 
 .experience-date {
     font-size: 18px;
-    color: #888;
+    color: #6e5f5f;
 }
 
 .experience-description {
     font-size: 18px;
-    color: #555;
-    margin-top: 12px;
+    color: #2d1b1b;
+    margin-top: 4px;
     line-height: 1.5;
 }
 
-.experience-skills-text {
-    margin-bottom: 12px;
-
+.experience-highlight {
+    font-size: 18px;
+    margin-top: 3px;
+    color: rgb(61, 26, 164);
 }
 
-/* ExperienceIcon.css */
-
-/* ExperienceIcon.css */
+.experience-skills-text {
+    margin-bottom: 2px;
+    margin-top: 8px;
+    text-decoration: underline;
+}
 
 /* General styling for mobile screens */
 @media screen and (max-width: 800px) {

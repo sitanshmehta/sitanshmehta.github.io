@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 import Resume from './Components/Resume/Resume';
 import RLD from './Components/Experience/RLD';
 import EButterfly from './Components/Experience/eButterfly';
+import Skygauge2 from './Components/Experience/Skygauge2';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/notes" element={<Notes />} />
         <Route path="/experience/RLD" element={<RLD />} />
         <Route path="/experience/eButterfly" element={<EButterfly />} />
+        <Route path="/experience/skygauge2" element={<Skygauge2 />} />
       </Routes>
     </div>
   )

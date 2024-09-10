@@ -133,7 +133,7 @@ const Skygauge = () => {
                 <section id="summary" className="experience-summary">
 
                     <h2>1. Executive Summary</h2>
-                    <p>Skygauge Robotics is an innovative Toronto-based startup making significant strides in the non-destructive testing (NDT) and industrial inspection market with their advanced drone technology. To support their rapid growth and meet the increasing demands of the market, they needed a dependable and intuitive ERP system. </p>
+                    <p>Skygauge Robotics is an innovative Toronto-based startup making significant strides in the<span style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }} onClick={() => scrollTo('NDT')}> non-destructive testing (NDT) </span> and industrial inspection market with their advanced drone technology. To support their rapid growth and meet the increasing demands of the market, they needed a dependable and intuitive ERP system. </p>
                     <p>
                         As a <strong>Full Stack Software Engineer Co-op</strong> at Skygauge, I was entrusted with rebuilding an existing internal ERP system that needed richer functionality.
                     </p>
@@ -217,7 +217,7 @@ const Skygauge = () => {
                     <ImageSlider images={operation_images} />
                 </section>
                 <section className="experience-problem">
-                    <h2 id='feature'>4. Key Features: (Organised by WorkFlow) </h2>
+                    <h2 id='features'>4. Key Features: (Organised by WorkFlow) </h2>
                     <h3 id='mm'>4.1 Master Material Management: </h3>
                     <p>
                         Skygauge frequently procured multiple parts from the same vendor, so I developed a form that allowed users to register several new parts for a single vendor simultaneously.
@@ -388,12 +388,12 @@ const Skygauge = () => {
                 </section>
 
                 <section className="experience-problem">
-                    <h2 id='acknowledgement'>Acknowledgement</h2>
+                    <h2 id='acknowledgement'>9. Acknowledgement</h2>
                     <p>
                         I want to express my deepest gratitude to the entire Skygauge Team for this incredible term.
-                        A special thanks to Linear, Maks, and Nikita for creating this opportunity.
-                        Sergeui, I am sincerely grateful for the trust you placed in with such significant responsibilities.
-                        Vandan and Vadym, thank you for your kindness, patience, and willingness to help whenever I needed it.
+                        A special thanks to Linar, Maks, and Nikita for creating this opportunity.
+                        Sergeui, I am sincerely grateful for you entrusting me with such significant responsibilities.
+                        Vandan, Vadym, and Shiejan -- thank you for your kindness, patience, and willingness to help whenever I needed it. Gino and Mathew, I could not have resolved my merge conflicts without you.
                         Working alongside such a talented and supportive team has been an invaluable experience, and I am truly thankful for the opportunity to contribute to Skygauge’s journey.
                     </p>
 
@@ -401,7 +401,7 @@ const Skygauge = () => {
 
 
                 <section id="glossary" className="glossary-section">
-                    <h2>6. Glossary: Definitions for Reference</h2>
+                    <h2>10. Glossary: Definitions for Reference</h2>
                     <dl>
                         <dt>Supply Chain</dt>
                         <dd>The entire network of entities, resources, activities, and technologies involved in the creation and sale of a product, from the delivery of source materials to the manufacturer, all the way to its delivery to the end user.</dd>
@@ -440,7 +440,7 @@ const Skygauge = () => {
                         <dt>Serialisation</dt>
                         <dd>The process of assigning a unique serial number to each individual unit or component of a product, allowing precise tracking through its lifecycle.</dd>
 
-                        <dt>Non-Destructive Testing</dt>
+                        <dt id='NDT'>Non-Destructive Testing</dt>
                         <dd>Inspection methods used to evaluate the properties of a material, component, or system without causing damage, ensuring product integrity and safety.</dd>
 
                         <dt>Inspection Market</dt>
