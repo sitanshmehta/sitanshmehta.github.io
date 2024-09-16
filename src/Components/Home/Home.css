@@ -68,23 +68,84 @@
     border: 3px solid #4e0c0c;
 }
 
+/* Media queries for responsiveness */
 @media screen and (max-width: 800px) {
+
+    /* Stack items vertically on smaller screens */
     .home-page {
         flex-direction: column;
-        text-align: left;
-        height: 110vh;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+        text-align: center;
     }
 
+    /* Adjust intro section */
     .intro {
         margin-right: 0;
         margin-bottom: 30px;
+        max-width: 100%;
     }
 
+    /* Reduce font sizes for better readability */
+    .intro-greeting {
+        font-size: 2rem;
+    }
+
+    .intro-content {
+        font-size: 1rem;
+    }
+
+    .interest-list li {
+        font-size: 1rem;
+    }
+
+    /* Stack contact info vertically */
+    .intro-note {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    .intro-item {
+        padding: 5px 0;
+    }
+
+    /* Display the profile image above the intro */
     .profile-image-container {
-        display: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        order: -1;
+        /* Moves image to the top */
     }
 
+    /* Resize the profile image */
     .profile-image {
-        display: none;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Further adjustments for very small screens */
+    .intro-greeting {
+        font-size: 1.8rem;
+    }
+
+    .intro-content,
+    .interest-list li {
+        font-size: 0.9rem;
+    }
+
+    .intro-item {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust padding */
+    .home-page {
+        padding: 15px;
+        padding-top: 90px;
     }
 }
