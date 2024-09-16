@@ -1,6 +1,6 @@
 import React, { Component, useEffect } from 'react';
 import './Skygauge.css';
-import ExperienceDetail from './ExperienceDetails';
+import "./ExperienceDetails.css";
 import CollapsibleSection from '../Helpers/Collaplsable';
 import ImageSlider from '../Helpers/ImageSlider';
 import SkygaugeIndex from '../Helpers/SkygaugeIndex';
