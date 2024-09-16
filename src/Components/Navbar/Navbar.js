@@ -1,37 +1,39 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { MenuItems } from './MenuItems';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css'
+import './Navbar.css';
 
-class Navbar extends Component {
-    state = { clicked: false }
+const Navbar = () => {
+    const [clicked, setClicked] = useState(false);
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
+    const handleClick = () => {
+        setClicked(!clicked);
+    };
 
-    render() {
-        return (
-            <nav className='NavbarItem'>
-                <div className='menu-icon' onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+    return (
+        <nav className='navbar'>
+            <div className='navbar-container'>
+                <div className='menu-icon' onClick={handleClick}>
+                    <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    {MenuItems.map((item, index) => {
-                        {
-                            return (
-                                <li key={index} className={item.cName}>
-                                    <NavLink to={item.url} className={item.cName}>
-                                        {item.title}
-                                    </NavLink>
-                                </li>
-                            );
-                        }
-                    })}
-                </ul>
-            </nav>
-        )
-    }
-}
 
-export default Navbar
+                <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
+                    {MenuItems.map((item, index) => (
+                        <li key={index} className='nav-item'>
+                            <NavLink
+                                to={item.url}
+                                className='nav-links'
+                                activeClassName='active'
+                                onClick={() => setClicked(false)}
+                            >
+                                {item.title}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;
