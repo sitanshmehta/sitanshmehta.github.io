@@ -80,7 +80,10 @@
 
 @media screen and (max-width: 800px) {
     .exp-page {
-        height: 150vh;
+        padding-top: 60px;
+        height: auto;
+        width: 100%;
+
     }
 
 }

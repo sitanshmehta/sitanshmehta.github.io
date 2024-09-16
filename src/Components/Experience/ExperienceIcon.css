@@ -79,27 +79,23 @@
         flex-direction: column;
         align-items: center;
         background-color: #f4f4f4;
-        padding: 15px;
+        padding: 10px;
         margin: 10px auto;
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         cursor: pointer;
         transition: transform 0.2s ease-in-out;
-        width: 90%;
-        /* Reduced width to ensure padding on both sides */
         max-width: 100%;
-        /* Ensures it doesn't exceed the screen width */
+        height: auto;
         text-align: center;
     }
 
     .experience-icon:hover {
         transform: scale(1.02);
-        /* Slightly enlarge the icon on hover */
     }
 
     .experience-image {
         width: 60px;
-        /* Slightly smaller for better spacing */
         height: 60px;
         border-radius: 50%;
         margin-bottom: 15px;
@@ -110,7 +106,6 @@
     .experience-text {
         width: 100%;
         text-align: left;
-        /* Align text to the left for better readability */
     }
 
     .experience-title {
@@ -122,12 +117,10 @@
 
     .experience-position {
         font-size: 1.2rem;
-        /* Adjusted font size for mobile */
         font-weight: bold;
         margin-bottom: 5px;
         color: #333;
         text-align: left;
-        /* Ensure text aligns to the left */
     }
 
     .experience-organisation {
@@ -135,7 +128,6 @@
         margin-bottom: 5px;
         color: #666;
         text-align: left;
-        /* Ensure text aligns to the left */
     }
 
     .experience-date {
@@ -143,25 +135,20 @@
         color: #888;
         margin-bottom: 10px;
         text-align: left;
-        /* Ensure text aligns to the left */
     }
 
     .experience-description {
         margin-top: 10px;
         font-size: 0.9rem;
-        /* Slightly smaller font size for descriptions */
         color: #555;
         text-align: left;
-        /* Ensure text aligns to the left */
     }
 
     .experience-skills-text {
         font-size: 0.9rem;
         font-weight: bold;
         color: #007bff;
-        /* Highlight skills */
         margin-bottom: 5px;
         text-align: left;
-        /* Ensure text aligns to the left */
     }
 }

@@ -1,16 +1,3 @@
-// {
-//     id: '',
-//     type: '',
-//     organisation: '',
-//     start_date: '',
-//     end_date: '',
-//     position: '',
-//     logo: '',
-//     url: '#',
-//     skills: '',
-//     description: '',
-// },
-
 const ExperienceList = [
     // {
     //     id: 1,
@@ -23,7 +10,6 @@ const ExperienceList = [
     //     url: 'skygauge2',
     //     skills: 'C++, Qt, Python, Linux',
     //     description: 'Building an Extended Kalman Filter for a thrust vectored over-actuated drone.',
-    //     highlight: 'Nominated for Waterloo Co-op of The Year',
     // },
     {
         id: 1,
