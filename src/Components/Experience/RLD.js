@@ -15,3 +15,9 @@ const RLD = () => {
 }
 
 export default RLD;
+
+//Talk about lessons learned
+//How to work in large codebases
+//How to network outside of your team
+//Distributed Systems -- gRPC, load balancing
+//Git, Making PRs
