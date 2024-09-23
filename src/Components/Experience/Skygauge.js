@@ -107,6 +107,13 @@ const Skygauge = () => {
         { src: '/images/Documentation/Flow.png', title: 'Flow of Data in the Transfer Parts Operation' },
 
     ]
+
+    const drone = [
+        { src: '/images/Drone/drone_2.png', title: 'The Skygauge Drone (Photo credits to the pilots)' },
+        { src: '/images/Drone/drone_1.png', title: 'The Skygauge Drone (Photo credits to the pilots)' },
+        { src: '/images/Drone/Plane.png', title: 'The Skygauge Drone (Photo credits to the pilots)' },
+    ]
+
     return (
         <div className='main-content'>
             <div className='index'>
@@ -148,6 +155,7 @@ const Skygauge = () => {
                         <li>Automated Inventory Tracking, BOM Management, Purchase Order Management, Serialisation of Electronics, and more, improving accuracy, and usability, driving widespread adoption across the company.</li>
                         <li>Streamlined operations, saving the operations team over <strong>50 hours per week</strong> and the company <strong>100,000 CAD annually</strong>.</li>
                     </ul>
+                    <ImageSlider images={drone} />
                 </section>
 
                 <section>
@@ -348,7 +356,21 @@ const Skygauge = () => {
                 </section>
 
                 <section className="experience-problem">
-                    <h2 id='adoption'>6. ERP System Adoption Within Company</h2>
+                    <h2 id='collaboration'>6. Investigating Stakeholder Needs: A collaboration</h2>
+                    <p>
+                        I collaborated closely with R&D, Production, and Operations to rebuild Skygauge Robotics' ERP system implement the features described in section 4 by immersing myself in their daily workflows.
+                        By managing inventory, processing purchase orders and more, I gained a firsthand clear understanding of their challenges.
+                        I interviewed stakeholders regularly to gather requirements, then created wireframe diagrams in Figma to visualize solutions.
+                        For instance, the Production team needed a better way to track inventory movements.
+                        I designed an intuitive interface based on my experience with their processes, presented mock-ups, and refined the design through their feedback.
+                        This iterative approach ensured the software met their practical needs.
+                        Throughout the project, I maintained thorough documentation and regularly taught stakeholders to navigate my ERP system to facilitate smooth adoption. This hands-on involvement and continuous communication ensured that the ERP system was user-friendly and effectively supported the company’s operations.
+                    </p>
+
+                </section>
+
+                <section className="experience-problem">
+                    <h2 id='adoption'>7. ERP System Adoption Within Skygauge</h2>
                     <p>
                         Throughout the development process, I actively facilitated the company-wide adoption of the ERP system by engaging with colleagues and guiding them through the transition from their existing processes to using the new system.
                     </p>
@@ -362,7 +384,7 @@ const Skygauge = () => {
                 </section>
 
                 <section id="docs" className="experience-problem">
-                    <h2> 7. Documentation</h2>
+                    <h2> 8. Documentation</h2>
                     <p>
                         As the primary developer of the ERP system, I handled debugging and maintenance, ensuring minimal downtime to avoid discrepancies between system data and real-world inventory. To mitigate risks, we used an Excel backup for real-time data capture. When issues arose, I manually reconstructed the database in Excel and documented the recovery process.
                     </p>
@@ -373,7 +395,7 @@ const Skygauge = () => {
                 </section>
 
                 <section id='skygauge_recommendation' className="experience-problem">
-                    <h2>8. Co-op of the Year Recommendation from Skygauge</h2>
+                    <h2>9. Co-op of the Year Recommendation from Skygauge</h2>
                     <div className="resume-viewer">
                         <iframe
                             src="Co-op_of_the_Year_Skygauge_Letter.pdf"
@@ -388,7 +410,7 @@ const Skygauge = () => {
                 </section>
 
                 <section className="experience-problem">
-                    <h2 id='acknowledgement'>9. Acknowledgement</h2>
+                    <h2 id='acknowledgement'>10. Acknowledgement</h2>
                     <p>
                         I want to express my deepest gratitude to the entire Skygauge Team for this incredible term.
                         A special thanks to Linar, Maks, and Nikita for creating this opportunity.
@@ -401,7 +423,7 @@ const Skygauge = () => {
 
 
                 <section id="glossary" className="glossary-section">
-                    <h2>10. Glossary: Definitions for Reference</h2>
+                    <h2>11. Glossary: Definitions for Reference</h2>
                     <dl>
                         <dt>Supply Chain</dt>
                         <dd>The entire network of entities, resources, activities, and technologies involved in the creation and sale of a product, from the delivery of source materials to the manufacturer, all the way to its delivery to the end user.</dd>

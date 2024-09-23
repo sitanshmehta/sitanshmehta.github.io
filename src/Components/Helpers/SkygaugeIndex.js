@@ -92,23 +92,27 @@ const index = [
         ]
     },
     {
-        title: '6. ERP System Adoption Within Skygauge',
+        title: '6. Investigating Stakeholder Needs: A collaboration',
+        id: 'collaboration'
+    },
+    {
+        title: '7. ERP System Adoption Within Skygauge',
         id: 'adoption'
     },
     {
-        title: '7. Documentation ',
+        title: '8. Documentation ',
         id: "docs"
     },
     {
-        title: '8. Waterloo Co-op of The Year Nomination Letter',
+        title: '9. Waterloo Co-op of The Year Nomination Letter',
         id: 'skygauge_recommendation'
     },
     {
-        title: '9. Acknowledgement',
+        title: '10. Acknowledgement',
         id: 'acknowledgement'
     },
     {
-        title: '10. Glossary',
+        title: '11. Glossary',
         id: 'glossary'
     },
 
