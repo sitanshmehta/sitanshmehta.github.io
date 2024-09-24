@@ -358,7 +358,7 @@ const Skygauge = () => {
                 <section className="experience-problem">
                     <h2 id='collaboration'>6. Investigating Stakeholder Needs: A collaboration</h2>
                     <p>
-                        I collaborated closely with R&D, Production, and Operations to rebuild Skygauge Robotics' ERP system implement the features described in section 4 by immersing myself in their daily workflows.
+                        I collaborated closely with R&D, Production, and Operations to rebuild Skygauge Robotics' ERP system and implement the features described in section 4 by immersing myself in their daily workflows.
                         By managing inventory, processing purchase orders and more, I gained a firsthand clear understanding of their challenges.
                         I interviewed stakeholders regularly to gather requirements, then created wireframe diagrams in Figma to visualize solutions.
                         For instance, the Production team needed a better way to track inventory movements.
